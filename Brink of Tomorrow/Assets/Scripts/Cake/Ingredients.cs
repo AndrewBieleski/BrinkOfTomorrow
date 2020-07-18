@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ingredients : PickUp
-{
+{ 
 
     public string ingredientType;
 
@@ -18,5 +18,4 @@ public class Ingredients : PickUp
     {
         
     }
-
 }
