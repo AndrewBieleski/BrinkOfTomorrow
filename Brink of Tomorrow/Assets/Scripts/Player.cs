@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float activationRadius = 1.0f;
     public bool inInteractZone = false;
     public bool inPickupZone = false;
-
+   
     //refs
     public BoxCollider2D bc;
     public Inventory playerInv;

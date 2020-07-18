@@ -7,13 +7,14 @@ public class CharacterController : MonoBehaviour
 {
 
     //variables
+    public float GasVolume = 100;
     public float speed = 5;
     public float jetpackForce = 50;
     public Vector2 velocity = Vector2.zero;
     public Vector2 force = Vector2.zero;
     public bool inSpace;
     public bool inInteractive = false;
-
+    public bool hasJetpack = false;
     //references
     public Rigidbody2D rb;
 
@@ -28,7 +29,7 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         if (!inSpace) Move();
-        if (inSpace) MoveInSpace();
+        if (inSpace && hasJetpack && GasVolume > 0) MoveInSpace();
     }
 
     public void Move()
@@ -61,6 +62,7 @@ public class CharacterController : MonoBehaviour
     public void MoveInSpace()
     {
         force = Vector2.zero;
+        GasVolume -= 1;
 
         if (Input.GetKey(KeyCode.W))
         {
