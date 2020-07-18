@@ -21,13 +21,19 @@ public class Inventory : MonoBehaviour
         
     }
 
-    public void PickUpObject(GameObject pickupObject)
+    public bool PickUpObject(GameObject pickupObject)
     {
-        heldObject = pickupObject;
+        if (heldObject = null) {
+            heldObject = pickupObject;
+            return true;
+        }
+        return false;
     }
 
-    public void DropObject()
+    public GameObject DropObject()
     {
+        GameObject droppedObject = heldObject;
         heldObject = null;
+        return droppedObject;
     }
 }
