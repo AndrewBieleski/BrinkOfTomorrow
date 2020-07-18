@@ -31,19 +31,41 @@ public class Player : MonoBehaviour
             currentInteractable.GetComponent<Interactable>().Interact();
         }
         //if picking up new object -> drop old object, pick up new object
-        else if (!inInteractZone && inPickupZone && MouseCheck(currentPickup) && Input.GetKeyDown(KeyCode.E))
+        else if (!inInteractZone && inPickupZone && MouseCheck(currentPickup) && Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(this.transform.position, playerInv);
+            if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(GetMousePoint(), playerInv);
             currentPickup.GetComponent<PickUp>().Pickup(playerInv);
         }
         //if not in interact zone or pickup zone, drop old object if one exists
-        else if (!inInteractZone && !inPickupZone && Input.GetKeyDown(KeyCode.E))
+        else if (!inInteractZone && !inPickupZone && Input.GetKeyDown(KeyCode.E) && PlayerMouseCheck())
         {
-            if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(this.transform.position, playerInv);
+            if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(GetMousePoint(), playerInv);
         }
     }
 
-    
+    public Vector3 GetMousePoint()
+    {
+        Vector3 wmp = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        return new Vector3(wmp.x, wmp.y, 0);
+    }
+
+    public bool PlayerMouseCheck()
+    {
+        Vector3 mp = Input.mousePosition;
+        Vector3 wmp = Camera.main.ScreenToWorldPoint(mp);
+        Vector2 position = Vector2.zero;
+        position.x = wmp.x;
+        position.y = wmp.y;
+
+        Vector2 distance = Vector2.zero;
+        distance.x = this.transform.position.x - position.x;
+        distance.y = this.transform.position.y - position.y;
+        Debug.Log(distance.magnitude);
+        if (distance.magnitude < activationRadius * 2.5) {
+            return true;
+        }
+        return false;
+    }
 
     public bool MouseCheck(GameObject interactable)
     {

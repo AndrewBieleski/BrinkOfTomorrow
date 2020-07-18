@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PickUp : Interactable
 {
+    public Canvas originalCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        originalCanvas = GetComponentInParent<Canvas>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class PickUp : Interactable
 
     public void Drop(Vector3 position, Inventory playerInv)
     {
+        //transform.SetParent(originalCanvas.gameObject.transform);
         playerInv.DropObject();
         bc.gameObject.SetActive(true);
         sr.gameObject.SetActive(true);

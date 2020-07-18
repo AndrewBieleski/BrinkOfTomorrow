@@ -11,8 +11,8 @@ public class DogAirlock : DogWaypoint
 	public override bool arrived()
 	{
 		if (Switch) {
-			Debug.Log("TEST");
-			dog.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1000, -1000));
+			dog.GetComponent<Rigidbody2D>().AddForce(new Vector2(-100, -100));
+			dog.GetComponent<Rigidbody2D>().AddTorque(10f);
 			return false;
 		} else {
 			return true;

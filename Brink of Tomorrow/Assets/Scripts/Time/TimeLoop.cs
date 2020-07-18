@@ -25,6 +25,6 @@ public class TimeLoop : MonoBehaviour
     {
         timeSave.SaveCurrentState();
         //Load into scene 1, we start in scene 0 with low time left)
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }

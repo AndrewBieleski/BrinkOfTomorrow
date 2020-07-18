@@ -28,7 +28,6 @@
             //get the vector from your position to current waypoint
             direction = points[destPoint].transform.position - transform.position;
             //check our distance to the current waypoint, Are we near enough?
-            Debug.Log(direction.magnitude);
             if (direction.magnitude < 1) {
                 alive = points[destPoint].arrived();
                 if (points.Length == 0)

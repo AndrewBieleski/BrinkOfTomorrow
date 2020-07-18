@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
 
     public bool PickUpObject(GameObject pickupObject)
     {
-        if (heldObject = null) {
+        if (heldObject == null) {
             heldObject = pickupObject;
             return true;
         }
