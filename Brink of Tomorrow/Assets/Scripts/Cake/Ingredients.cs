@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cake : MonoBehaviour
+public class Ingredients : PickUp
 {
+
+    public string ingredientType;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +18,5 @@ public class Cake : MonoBehaviour
     {
         
     }
+
 }

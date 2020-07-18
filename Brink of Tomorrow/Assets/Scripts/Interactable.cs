@@ -21,10 +21,10 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print("TEST");
     }
 
-    public void Interact()
+    virtual public void Interact()
     {
         Debug.Log("interacted");
     }
