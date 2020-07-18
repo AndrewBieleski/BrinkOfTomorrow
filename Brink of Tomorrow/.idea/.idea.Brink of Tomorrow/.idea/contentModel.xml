@@ -6,15 +6,23 @@
     <e p="D:\Work\Git\BrinkOfTomorrowGame\Brink of Tomorrow" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Script" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Cake" t="Include">
+            <e p="Cake.cs" t="Include" />
+            <e p="Ingredients.cs" t="Include" />
+            <e p="Oven.cs" t="Include" />
+          </e>
+          <e p="CharacterController.cs" t="Include" />
           <e p="Dialogue" t="Include">
             <e p="Dialogue.cs" t="Include" />
             <e p="DialogueManager.cs" t="Include" />
             <e p="DialogueTrigger.cs" t="Include" />
           </e>
-        </e>
-        <e p="Scripts" t="Include">
-          <e p="CharacterController.cs" t="Include" />
+          <e p="Dog" t="Include">
+            <e p="DogAirlock.cs" t="Include" />
+            <e p="DogPatrol.cs" t="Include" />
+            <e p="DogWaypoint.cs" t="Include" />
+          </e>
           <e p="Easing.cs" t="Include" />
           <e p="FixedSortOrder.cs" t="Include" />
           <e p="FollowTarget.cs" t="Include" />
@@ -23,7 +31,15 @@
           <e p="Jetpack.cs" t="Include" />
           <e p="PickUp.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="ShootingStar" t="Include">
+            <e p="ShootingStar.cs" t="Include" />
+          </e>
           <e p="SortOrder.cs" t="Include" />
+          <e p="Time" t="Include">
+            <e p="TimeClock.cs" t="Include" />
+            <e p="TimeLoop.cs" t="Include" />
+            <e p="TimeSave.cs" t="Include" />
+          </e>
           <e p="Upgrade.cs" t="Include" />
         </e>
       </e>
