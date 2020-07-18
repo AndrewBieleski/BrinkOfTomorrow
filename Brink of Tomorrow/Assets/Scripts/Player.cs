@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
             currentPickup.GetComponent<PickUp>().Pickup(playerInv);
         }
         //if not in interact zone or pickup zone, drop old object if one exists
-        else if (!inInteractZone && !inPickupZone && Input.GetKeyDown(KeyCode.E) && PlayerMouseCheck())
+        else if (!inInteractZone && !inPickupZone && Input.GetKeyDown(KeyCode.Mouse0) && PlayerMouseCheck())
         {
             if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(GetMousePoint(), playerInv);
         }
@@ -60,8 +60,19 @@ public class Player : MonoBehaviour
         Vector2 distance = Vector2.zero;
         distance.x = this.transform.position.x - position.x;
         distance.y = this.transform.position.y - position.y;
-        Debug.Log(distance.magnitude);
         if (distance.magnitude < activationRadius * 2.5) {
+            return true;
+        }
+        return false;
+    }
+
+    public bool DistanceCheck(GameObject target)
+    {
+        Vector2 distance = Vector2.zero;
+        distance.x = this.transform.position.x - target.GetComponent<Transform>().position.x;
+        distance.y = this.transform.position.y - target.GetComponent<Transform>().position.y;
+
+        if (distance.magnitude > activationRadius * 5) {
             return true;
         }
         return false;
@@ -81,6 +92,7 @@ public class Player : MonoBehaviour
             distance.x = interactable.transform.position.x - position.x;
             distance.y = interactable.transform.position.y - position.y;
 
+            //Debug.Log(distance.magnitude);
             if (distance.magnitude < activationRadius)
             {
                 return true;

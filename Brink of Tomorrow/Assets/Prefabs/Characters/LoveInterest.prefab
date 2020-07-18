@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1870108507517134338}
   - component: {fileID: 1870108507517134339}
   - component: {fileID: 3533880320976797033}
+  - component: {fileID: 1977409246}
   m_Layer: 0
   m_Name: LoveInterest
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1870108507517134336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.394, y: 0.153, z: -0.626709}
-  m_LocalScale: {x: 0.4077, y: 0.4077, z: 0.4077}
+  m_LocalScale: {x: 4.910998, y: 4.910998, z: 4.910998}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.07638876, y: -0.61110914}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -107,5 +108,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.61, y: 1.58}
+  m_Size: {x: 0.6551434, y: 0.35778165}
   m_EdgeRadius: 0
+--- !u!114 &1977409246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870108507517134336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d910c3a16a0114999535133f195f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runThisFrame: 0
+  interactable: 1
+  bc: {fileID: 3533880320976797033}
+  sr: {fileID: 1870108507517134339}
+  targetDialogue:
+    dialogueName: Sarah Witacker
+    dialogueText: Hi! I'm Sarah Witacker! What is your name?
+    leftChoiceTitle: I LIKE TRAINS!
+    rightChoiceTitle: No
