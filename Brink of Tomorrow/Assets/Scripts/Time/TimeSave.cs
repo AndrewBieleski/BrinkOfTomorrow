@@ -5,22 +5,33 @@ using UnityEngine;
 
 public class TimeSave : MonoBehaviour
 {
-	public bool ShootingStarObjective = false;
-	public GameObject shootingStarUncomplete;
-	public GameObject shootingStarComplete;
 
-	public bool CakeObjective = false;
-	public bool PatADinosaur = false;
-	public bool SavePuppy = false;
+	//public GameObject shootingStarUncomplete;
+	//public GameObject shootingStarComplete;
+
+	public bool SawAStar = false;
+	public bool BakedACake = false;
+	public bool SavedPuppy = false;
 	public bool FindLove = false;
-	public bool SaveStation = false;
+	public bool PatADinosaur = false;
+	//public bool SaveStation = false;
+
+	public GameObject cakeObjective;
+	public GameObject dinoObjective;
+	public GameObject puppyObjective;
+	public GameObject loveObjective;
+	public GameObject shootingObjective;
+	//public GameObject stationObjective;
 
 	//Contains all the variables we want to save between levels
-	private void Start()
+	void Update()
 	{
 		//Set objectives
-		shootingStarUncomplete.SetActive(!ShootingStarObjective);
-		shootingStarComplete.SetActive(ShootingStarObjective);
+		cakeObjective.SetActive(BakedACake);
+		dinoObjective.SetActive(PatADinosaur);
+		puppyObjective.SetActive(SavedPuppy);
+		loveObjective.SetActive(FindLove);
+		shootingObjective.SetActive(SawAStar);
 	}
 
 	public void SaveCurrentState()

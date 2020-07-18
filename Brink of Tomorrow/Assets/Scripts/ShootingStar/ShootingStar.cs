@@ -13,7 +13,7 @@ public class ShootingStar : MonoBehaviour
     {
         if (TimeClock.currentTime > TimeClock.StarTime && this.GetComponent<Collider2D>().IsTouching(player.GetComponent<Collider2D>())){
             //Play Shooting Star Animation
-            GetComponent<TimeSave>().ShootingStarObjective = true;
+            GetComponent<TimeSave>().SawAStar = true;
         } 
     }
 }
