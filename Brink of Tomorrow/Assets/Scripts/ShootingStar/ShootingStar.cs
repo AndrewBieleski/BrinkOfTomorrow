@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,5 +16,4 @@ public class ShootingStar : MonoBehaviour
             GetComponent<TimeSave>().ShootingStarObjective = true;
         } 
     }
-
 }
