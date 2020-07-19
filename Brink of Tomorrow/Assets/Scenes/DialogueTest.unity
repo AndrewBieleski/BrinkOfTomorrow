@@ -121,6 +121,106 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &38734948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38734949}
+  - component: {fileID: 38734950}
+  m_Layer: 0
+  m_Name: Success
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &38734949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38734948}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1313194321}
+  m_Father: {fileID: 1012584508}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38734950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38734948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: Wow ... we really are destined for each other. I think I'm in love.
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: 
+  rightChoiceTitle: 
+--- !u!1 &95527014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95527015}
+  - component: {fileID: 95527016}
+  m_Layer: 0
+  m_Name: FirstDialogueTree (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95527015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95527014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 972556567}
+  m_Father: {fileID: 1313194321}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95527016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95527014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
 --- !u!1 &179389279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,7 +2966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &411127513
+--- !u!1 &407772668
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2874,55 +2974,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 411127514}
-  - component: {fileID: 411127515}
+  - component: {fileID: 407772669}
+  - component: {fileID: 407772670}
   m_Layer: 0
-  m_Name: ColliderZone
-  m_TagString: Interactable
+  m_Name: Dialogue4
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &411127514
+--- !u!4 &407772669
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411127513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 407772668}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1977409247}
+  m_Father: {fileID: 869091953}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &411127515
-BoxCollider2D:
+--- !u!114 &407772670
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411127513}
+  m_GameObject: {fileID: 407772668}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.06841993, y: -0.5571249}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9022591, y: 0.62858427}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
 --- !u!114 &530343127 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7263536588508389519, guid: ca484b7f123307c419cec5756ec78178,
@@ -2968,11 +3060,7 @@ MonoBehaviour:
   text: {fileID: 530343127}
   leftButton: {fileID: 769822199}
   rightButton: {fileID: 407568178}
-  currentDialogue:
-    dialogueName: 
-    dialogueText: 
-    leftChoiceTitle: 
-    rightChoiceTitle: 
+  currentDialogue: {fileID: 0}
   DialogueScreen: {fileID: 759853197}
   typeSpeed: 0.05
   player: {fileID: 1697950861}
@@ -3268,6 +3356,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &869091952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 869091953}
+  - component: {fileID: 869091954}
+  m_Layer: 0
+  m_Name: Dialogue3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &869091953
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869091952}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 407772669}
+  m_Father: {fileID: 1781734095}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869091954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869091952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
 --- !u!1 &896026667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,6 +3438,157 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &942248848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942248849}
+  - component: {fileID: 942248850}
+  m_Layer: 0
+  m_Name: Fail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &942248849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942248848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1012584508}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &942248850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942248848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: Oh ... okay. Look, I'm very busy right now with the whole 'station
+    blowing up thing' so let's chat later.
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: 
+  rightChoiceTitle: 
+--- !u!1 &972556566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972556567}
+  - component: {fileID: 972556568}
+  m_Layer: 0
+  m_Name: FirstDialogueTree (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972556567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972556566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 95527015}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &972556568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972556566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
+--- !u!1 &1012584507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1012584508}
+  - component: {fileID: 1012584509}
+  m_Layer: 0
+  m_Name: FirstDialogueTree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1012584508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012584507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 38734949}
+  - {fileID: 942248849}
+  - {fileID: 1923609190}
+  m_Father: {fileID: 1977409247}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1012584509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012584507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
 --- !u!1 &1016348878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3588,6 +3877,56 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7263536588129567832}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1313194320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313194321}
+  - component: {fileID: 1313194322}
+  m_Layer: 0
+  m_Name: FirstDialogueTree (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313194321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313194320}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 95527015}
+  m_Father: {fileID: 38734949}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1313194322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313194320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
 --- !u!1 &1338156066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3774,6 +4113,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4aa99a781d9cd4b802f58af8397c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1781734094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1781734095}
+  - component: {fileID: 1781734096}
+  m_Layer: 0
+  m_Name: Dialgoue2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1781734095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781734094}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 869091953}
+  m_Father: {fileID: 1923609190}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1781734096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781734094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love puppies!
+  rightChoiceTitle: I love kittens!
+--- !u!1 &1923609189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1923609190}
+  - component: {fileID: 1923609191}
+  m_Layer: 0
+  m_Name: Dialogue1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1923609190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923609189}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1781734095}
+  m_Father: {fileID: 1012584508}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1923609191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923609189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueName: Dr Sammy Smith
+  dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
+  leftChoice: {fileID: 0}
+  rightChoice: {fileID: 0}
+  leftChoiceTitle: I love the theatre!
+  rightChoiceTitle: I love the movies!
 --- !u!1001 &1977409242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3781,19 +4220,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1977409246, guid: 07307ec20ca914a40a3aa338925d561c, type: 3}
-      propertyPath: interactable
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1870108507517134336, guid: 07307ec20ca914a40a3aa338925d561c,
         type: 3}
       propertyPath: m_Name
       value: LoveInterest
-      objectReference: {fileID: 0}
-    - target: {fileID: 1870108507517134336, guid: 07307ec20ca914a40a3aa338925d561c,
-        type: 3}
-      propertyPath: m_TagString
-      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 1870108507517134338, guid: 07307ec20ca914a40a3aa338925d561c,
         type: 3}
@@ -3849,31 +4279,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533880320976797033, guid: 07307ec20ca914a40a3aa338925d561c,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533880320976797033, guid: 07307ec20ca914a40a3aa338925d561c,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -0.04706669
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533880320976797033, guid: 07307ec20ca914a40a3aa338925d561c,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.51336825
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533880320976797033, guid: 07307ec20ca914a40a3aa338925d561c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1.7652574
-      objectReference: {fileID: 0}
-    - target: {fileID: 3533880320976797033, guid: 07307ec20ca914a40a3aa338925d561c,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.4340358
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07307ec20ca914a40a3aa338925d561c, type: 3}
