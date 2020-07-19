@@ -6,6 +6,7 @@ public class TimeMachine : Interactable
 {
 
     public Inventory inventory;
+    public TimeSave objective;
 
     //Three ingredients the oven needs
     public PickUp missingPart;
@@ -19,6 +20,7 @@ public class TimeMachine : Interactable
             this.GetComponent<SpriteRenderer>().sprite = fixedSprite;
             fixedMachine = true;
             inventory.heldObject = null;
+            objective.SaveStation = true;
         }
     }
 
