@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6356228540469763499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6187186, y: -0.4769, z: -1.2373047}
-  m_LocalScale: {x: 0.25770745, y: 0.25770745, z: 0.25770745}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 57365866442116020, guid: ff09feeee047b89488f5fde1ff9363bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   interactable: 0
   bc: {fileID: 5415144533658647503}
   sr: {fileID: 5391040030194062764}
+  originalCanvas: {fileID: 0}
   cookingTime: 100
 --- !u!61 &5415144533658647503
 BoxCollider2D:
@@ -110,7 +111,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -7,15 +7,16 @@ public class Oven : Interactable {
     public Inventory inventory;
 
     //Three ingredients the oven needs
-    public List<string> requiredIngredients;
+    public List<string> requiredIngredients = new List<string>();
 
     public bool isBaking = false;
     public Cake cake;
+    public GameObject cakePrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        requiredIngredients = new List<string>();
+        
     }
 
     // Update is called once per frame
@@ -41,7 +42,8 @@ public class Oven : Interactable {
             GameObject currentIngredient = inventory.DropObject();
             if (requiredIngredients.Count == 0) {
                 isBaking = true;
-                cake = new Cake();
+                cakePrefab = Instantiate(cakePrefab, this.transform.position, this.transform.rotation, null);
+                cake = cakePrefab.GetComponent<Cake>();
             }          
         }
     }

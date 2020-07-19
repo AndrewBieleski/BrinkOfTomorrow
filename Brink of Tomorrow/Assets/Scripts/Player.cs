@@ -26,18 +26,18 @@ public class Player : MonoBehaviour
     {
         
         //if interacting with interactable -> interact
-        if (inInteractZone && MouseCheck(currentInteractable) && Input.GetKeyDown(KeyCode.E))
+        if (inInteractZone && MouseCheck(currentInteractable) && Input.GetMouseButtonDown(0))
         {
             currentInteractable.GetComponent<Interactable>().Interact();
         }
         //if picking up new object -> drop old object, pick up new object
-        else if (!inInteractZone && inPickupZone && MouseCheck(currentPickup) && Input.GetKeyDown(KeyCode.Mouse0))
+        else if (!inInteractZone && inPickupZone && MouseCheck(currentPickup) && Input.GetMouseButtonDown(0))
         {
             if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(GetMousePoint(), playerInv);
             currentPickup.GetComponent<PickUp>().Pickup(playerInv);
         }
         //if not in interact zone or pickup zone, drop old object if one exists
-        else if (!inInteractZone && !inPickupZone && Input.GetKeyDown(KeyCode.Mouse0) && PlayerMouseCheck())
+        else if (!inInteractZone && !inPickupZone && Input.GetMouseButtonDown(0) && PlayerMouseCheck())
         {
             if (playerInv.heldObject) playerInv.heldObject.GetComponent<PickUp>().Drop(GetMousePoint(), playerInv);
         }
