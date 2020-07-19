@@ -14,6 +14,6 @@ public class Dialogue : MonoBehaviour
     public string leftChoiceTitle;
     public string rightChoiceTitle;
 
-    public void DialogueEvent() {}
+    public virtual void DialogueEvent() {}
 
 }

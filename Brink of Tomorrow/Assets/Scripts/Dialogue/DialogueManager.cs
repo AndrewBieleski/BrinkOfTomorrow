@@ -21,6 +21,8 @@ public class DialogueManager : MonoBehaviour
 	{
 		leftButton.gameObject.SetActive(false);
 		rightButton.gameObject.SetActive(false);
+		leftButton.onClick.AddListener(LeftButton);
+		rightButton.onClick.AddListener(RightButton);
 	}
 
 	private void Update()
@@ -49,6 +51,7 @@ public class DialogueManager : MonoBehaviour
 
 	internal void DisplayNextDialogue()
 	{
+		currentDialogue.DialogueEvent();
 		StopAllCoroutines();
 		title.text = "";
 		text.text = "";
@@ -59,6 +62,13 @@ public class DialogueManager : MonoBehaviour
 
 	IEnumerator TypeSentence(string inputText, TextMeshProUGUI targetText)
 	{
+		if (currentDialogue.leftChoiceTitle == "") {
+			leftButton.gameObject.SetActive(false);
+		}
+		if (currentDialogue.rightChoiceTitle == "") {
+			rightButton.gameObject.SetActive(false);
+		}
+
 		foreach (char letter in inputText.ToCharArray()) {
 			targetText.text += letter;
 			yield return new WaitForSeconds(typeSpeed/2);
@@ -68,22 +78,19 @@ public class DialogueManager : MonoBehaviour
 	}
 	IEnumerator TypeContent(string inputText, TextMeshProUGUI targetText)
 	{
+
 		foreach (char letter in inputText.ToCharArray()) {
 			targetText.text += letter;
 			yield return new WaitForSeconds(typeSpeed);
 		}
 
-		if (currentDialogue.leftChoiceTitle != null) {
+		if (currentDialogue.leftChoiceTitle != "") {
 			leftButton.gameObject.SetActive(true);
 			StartCoroutine(TypeLeftButton(currentDialogue.leftChoiceTitle, leftButton.GetComponentInChildren<TextMeshProUGUI>()));
-		} else {
-			leftButton.gameObject.SetActive(false);
 		}
-		if (currentDialogue.leftChoiceTitle != null) {
+		if (currentDialogue.leftChoiceTitle != "") {
 			rightButton.gameObject.SetActive(true);
 			StartCoroutine(TypeRightButton(currentDialogue.rightChoiceTitle, rightButton.GetComponentInChildren<TextMeshProUGUI>()));
-		} else {
-			rightButton.gameObject.SetActive(true);
 		}
 	}
 	IEnumerator TypeLeftButton(string inputText, TextMeshProUGUI targetText)
@@ -108,7 +115,7 @@ public class DialogueManager : MonoBehaviour
 		}
 	}
 
-		internal void CloseDialogue()
+	internal void CloseDialogue()
 	{
 		currentDialogue = null;
 		DialogueScreen.SetActive(false);
@@ -125,5 +132,7 @@ public class DialogueManager : MonoBehaviour
 		currentDialogue = currentDialogue.rightChoice;
 		DisplayNextDialogue();
 	}
+
+	
 
 }
