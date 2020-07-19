@@ -7,6 +7,7 @@ public class TimeMachine : Interactable
 
     public Inventory inventory;
     public TimeSave objective;
+    public GameObject dino;
 
     //Three ingredients the oven needs
     public PickUp missingPart;
@@ -21,6 +22,13 @@ public class TimeMachine : Interactable
             fixedMachine = true;
             inventory.heldObject = null;
             objective.SaveStation = true;
+        }
+
+        else if (fixedMachine && inventory.heldObject.GetComponentInChildren<PickUp>() is Floppy)
+        {
+            //Spawn Dino
+            dino.gameObject.SetActive(true);
+
         }
     }
 
