@@ -42,7 +42,7 @@ public class Oven : Interactable {
             GameObject currentIngredient = inventory.DropObject();
             if (requiredIngredients.Count == 0) {
                 isBaking = true;
-                cakePrefab = Instantiate(cakePrefab, this.transform.position, this.transform.rotation, null);
+                cakePrefab.SetActive(true);
                 cake = cakePrefab.GetComponent<Cake>();
             }          
         }

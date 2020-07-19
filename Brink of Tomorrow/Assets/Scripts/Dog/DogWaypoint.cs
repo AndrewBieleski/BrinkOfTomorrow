@@ -14,6 +14,7 @@ public class DogWaypoint : MonoBehaviour
 
 	public virtual bool arrived()
 	{
+		Debug.Log("TEST");
 		return !dangerous;
 	}
 }

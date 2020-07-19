@@ -96,11 +96,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runThisFrame: 0
-  interactable: 0
+  interactable: 1
   bc: {fileID: 5415144533658647503}
   sr: {fileID: 5391040030194062764}
   originalCanvas: {fileID: 0}
   cookingTime: 100
+  countdown: {fileID: 0}
+  hud: {fileID: 0}
+  cooking: 0
 --- !u!61 &5415144533658647503
 BoxCollider2D:
   m_ObjectHideFlags: 0

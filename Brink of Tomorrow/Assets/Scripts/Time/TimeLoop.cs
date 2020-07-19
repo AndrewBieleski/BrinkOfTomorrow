@@ -11,6 +11,8 @@ public class TimeLoop : MonoBehaviour
     public TMPro.TextMeshProUGUI countdown;
 
     public int maxTimeSeconds = 300;
+    public int starTime = 20;
+    public GameObject star;
 
     void Start()
     {
@@ -22,6 +24,9 @@ public class TimeLoop : MonoBehaviour
         TimeClock.currentTime -= Time.deltaTime;
         TimeSpan timeSpan = TimeSpan.FromSeconds(TimeClock.currentTime);
         countdown.text = string.Format("{0:D2}:{1:D2}:{2:}", timeSpan.Minutes, timeSpan.Seconds, (timeSpan.Milliseconds % 10000) / 10);
+        if (TimeClock.currentTime < starTime && star.activeSelf == false) {
+            star.SetActive(true);
+        }
         if (TimeClock.currentTime < 0) {
             ResetTime();
         }

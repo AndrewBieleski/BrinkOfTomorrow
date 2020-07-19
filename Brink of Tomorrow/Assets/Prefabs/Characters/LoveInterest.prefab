@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 38734949}
-  - component: {fileID: 38734950}
+  - component: {fileID: 1279015169435833428}
   m_Layer: 0
   m_Name: Success
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 869091953}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &38734950
+--- !u!114 &1279015169435833428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 38734948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0498fc4eb6433294e945d214faedcdaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: Dr Sammy Smith
@@ -49,6 +49,7 @@ MonoBehaviour:
   rightChoice: {fileID: 0}
   leftChoiceTitle: 
   rightChoiceTitle: 
+  objective: {fileID: 0}
 --- !u!1 &411127513
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,8 +154,8 @@ MonoBehaviour:
   dialogueName: Dr Sammy Smith
   dialogueText: This is uncanny, it's like you know exactly who I am! Maybe it's
     destiny! One last thing, books or tv shows?
-  leftChoice: {fileID: 38734950}
-  rightChoice: {fileID: 942248850}
+  leftChoice: {fileID: 1279015169435833428}
+  rightChoice: {fileID: 1279015169144601674}
   leftChoiceTitle: Books are superior
   rightChoiceTitle: Tv shows are the best
 --- !u!1 &942248848
@@ -166,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 942248849}
-  - component: {fileID: 942248850}
+  - component: {fileID: 1279015169144601674}
   m_Layer: 0
   m_Name: Fail
   m_TagString: Untagged
@@ -186,9 +187,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1012584508}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &942248850
+--- !u!114 &1279015169144601674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,7 +198,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 942248848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4908390918f82840ab07a2aaf1c7ec5, type: 3}
+  m_Script: {fileID: 11500000, guid: ddf8255337135cc4ea6e85a5622cc1d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueName: Dr Sammy Smith
@@ -207,6 +208,7 @@ MonoBehaviour:
   rightChoice: {fileID: 0}
   leftChoiceTitle: 
   rightChoiceTitle: 
+  originalDialogue: {fileID: 1977409246}
 --- !u!1 &1012584507
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,8 +237,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 942248849}
   - {fileID: 1781734095}
+  - {fileID: 942248849}
   m_Father: {fileID: 1870108507517134338}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -255,7 +257,7 @@ MonoBehaviour:
   dialogueName: Dr Sammy Smith
   dialogueText: 'Oh, hi there! It''s quite peaceful here for the end of the world. '
   leftChoice: {fileID: 1781734096}
-  rightChoice: {fileID: 942248850}
+  rightChoice: {fileID: 1279015169144601674}
   leftChoiceTitle: I love the theatre!
   rightChoiceTitle: I love the movies!
 --- !u!1 &1781734094
@@ -288,7 +290,7 @@ Transform:
   m_Children:
   - {fileID: 869091953}
   m_Father: {fileID: 1012584508}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1781734096
 MonoBehaviour:
@@ -305,7 +307,7 @@ MonoBehaviour:
   dialogueName: Dr Sammy Smith
   dialogueText: OMG, me too! I love almost all animals, what about you?
   leftChoice: {fileID: 869091954}
-  rightChoice: {fileID: 942248850}
+  rightChoice: {fileID: 1279015169144601674}
   leftChoiceTitle: I love puppies!
   rightChoiceTitle: I love kittens!
 --- !u!1 &1870108507517134336
@@ -334,8 +336,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870108507517134336}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.394, y: 0.153, z: -0.626709}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 83.2, y: -12.3, z: -0.626709}
   m_LocalScale: {x: 4.910998, y: 4.910998, z: 4.910998}
   m_Children:
   - {fileID: 411127514}
@@ -436,4 +438,5 @@ MonoBehaviour:
   interactable: 1
   bc: {fileID: 3533880320976797033}
   sr: {fileID: 1870108507517134339}
-  targetDialogue: {fileID: 0}
+  targetDialogue: {fileID: 1012584509}
+  doneTalking: 0

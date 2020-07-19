@@ -15,11 +15,6 @@
     public float dogSpeed;
     private bool alive = true;
 
-    void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-        agent.autoBraking = false;
-    }
 
     void FixedUpdate()
     {

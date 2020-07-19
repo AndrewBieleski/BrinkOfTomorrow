@@ -76,6 +76,8 @@ MonoBehaviour:
   bc: {fileID: 5657065156268170413}
   sr: {fileID: 4264697228542574086}
   inventory: {fileID: 0}
+  objective: {fileID: 0}
+  dino: {fileID: 0}
   missingPart: {fileID: 0}
   fixedSprite: {fileID: 1735512321262380124, guid: 42ff78916bc3c004f89c99653e4e4d69,
     type: 3}

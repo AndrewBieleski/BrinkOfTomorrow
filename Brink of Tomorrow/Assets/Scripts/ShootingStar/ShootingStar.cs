@@ -6,14 +6,21 @@ using UnityEngine;
 public class ShootingStar : MonoBehaviour
 {
     public CharacterController player;
-    public GameObject ShootingStarUncomplete;
-    public GameObject ShootingStarComplete;
+    public TimeSave starObjective;
+    public Collider2D targetArea;
+    public GameObject objective;
+
+    private void Awake()
+    {
+        this.GetComponent<Rigidbody2D>().AddForce(new Vector2(600, 800));
+    }
 
     private void Update()
     {
-        if (TimeClock.currentTime > TimeClock.StarTime && this.GetComponent<Collider2D>().IsTouching(player.GetComponent<Collider2D>())){
+        if (targetArea.IsTouching(player.GetComponent<Collider2D>())){
             //Play Shooting Star Animation
-            GetComponent<TimeSave>().SawAStar = true;
+            starObjective.SawAStar = true;
+            objective.SetActive(true);
         } 
     }
 }
