@@ -7,6 +7,8 @@ public class DoorButton : Interactable
     //vars
     public bool open = false;
 
+    public DogAirlock door;
+
     //refs
     public List<GameObject> doorObjects = new List<GameObject>();
 
@@ -24,6 +26,9 @@ public class DoorButton : Interactable
 
     public override void Interact()
     {
+
+        door.Switch = false;
+
         foreach (GameObject door in doorObjects)
         {
             door.SetActive(open);
